@@ -79,3 +79,13 @@ if __name__ == "__main__":
     print(tree.preorder(tree.root))   # ["Dr. Croft", "Dr. Phan", "Dr. Morgan", "Dr. Carson", "Dr. Goldsmith"]
     print(tree.inorder(tree.root))    # ["Dr. Morgan", "Dr. Phan", "Dr. Carson", "Dr. Croft", "Dr. Goldsmith"]
     print(tree.postorder(tree.root))  # ["Dr. Morgan", "Dr. Carson", "Dr. Phan", "Dr. Goldsmith", "Dr. Croft"]
+
+
+# A tree is appropriate for the doctor structure because it clearly shows the hierarchy between doctors and their reports. Each doctor can have two people reporting to them, which fits perfectly with the idea of parent and child nodes in a binary tree.
+# It also makes it easier to organize and visualize who works under who, and to find relationships quickly by moving through the tree.
+# A software engineer might use different traversals depending on what they need to do with the data.
+# Preorder traversal is useful when you want to process the parent before the children, like copying or saving a tree structure. Inorder traversal is great for getting data in a sorted or logical order, especially for binary search trees.
+#Postorder traversal is helpful when you need to handle or delete children before the parent, like when freeing up memory or evaluating mathematical expressions in tree form.
+# Heaps are helpful for simulating real-time systems like emergency intake because they automatically keep the most urgent cases at the top. In a min-heap, the patient with the lowest urgency number
+# always stays at the root, so the system can serve them first without checking every record.
+#This makes it efficient to handle continuous updates as new patients arrive or old ones are removed. Overall, heaps make real-time decision-making faster and more organized, just like how emergency rooms must prioritize patients based on urgency.
